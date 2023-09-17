@@ -76,6 +76,6 @@ app.delete("/delete-todo/:id", async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
+app.listen(process.env?.PORT || 5000, () => {
   console.log(`server is running on the port no: 5000`);
 });
